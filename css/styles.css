@@ -3,6 +3,10 @@ body {
   background-attachment: fixed;
 }
 
+h1 {
+  text-align: center;
+}
+
 .container {
   margin: 0;
   padding: 0;
@@ -15,10 +19,12 @@ body {
   background-color: #f1d8a4;
   width: 100vw;
   margin-left: 0vw;
-  text-align: center;
-  font-size: 70px;
   padding: 7%;
   padding-bottom: 6%;
+}
+
+.custom-head h1 {
+    font-size: 70px;
 }
 
 .flexer {
@@ -75,3 +81,29 @@ ul {
 }
 
 /* Fancier customizations below this line */
+.fancier h1 {
+  font-family: cursive;
+  font-size: 50px;
+}
+
+.fancier h2 {
+  font-family: cursive;
+  font-weight: bolder;
+}
+
+.fancier .custom-head {
+  padding: 3%;
+  background: url("../img/woodTexture.png"), #c9a573;
+  text-align: center;
+}
+
+.fancier .custom-head img {
+  text-align: center;
+  width: 40vw;
+  border-radius: 100px;
+  margin: 10px;
+}
+
+.fancier .sidebar {
+  background: url("../img/verticalWoodTexture.png"), #a57b40;
+}

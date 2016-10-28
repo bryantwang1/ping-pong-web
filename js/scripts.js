@@ -56,11 +56,20 @@ $(function() {
     });
   });
 
-  $("#button#imitation").click(function() {
-    $(".fancier-or-not").removeClass();
+  $("button#imitation").click(function() {
+    $("div#fancier-or-not").removeClass();
+    $("#fancier-or-not h1").children("p").remove();
+    $("#fancier-or-not .custom-head").children("h1").remove();
+    $("#fancier-or-not .custom-head").children("img").remove();
+    $("#fancier-or-not .custom-head").append("<h1>Ping-Pong</h1>");
   });
 
-  $("#button#imitation").click(function() {
-    $(".fancier-or-not").addClass("fancier");
+  $("button#fancier").click(function() {
+    $("div#fancier-or-not").addClass("fancier");
+    $(".fancier .custom-head").children("h1").remove();
+    $(".fancier .custom-head").children("img").remove();
+    $(".fancier .custom-head").prepend("<h1>Ye Olde Ping-Pong</h1>");
+    $(".fancier .custom-head").append("<img src=\"img/oldPingPong.jpg\">");
+    $(".fancier .custom-head").append("<img src=\"img/oldPingPongCat.jpg\">");
   });
 });
