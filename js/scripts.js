@@ -1,4 +1,5 @@
 var arrayOfCountings;
+var result;
 // Counts up to and including the provided number by increments of 1.
 function inputCounter(number) {
   arrayOfCountings = [];
@@ -8,18 +9,26 @@ function inputCounter(number) {
 };
 //
 function pingPonger(input) {
-    pingAndPong: {
+  pingAndPong: {
 
-      input = parseInt(input);
-      inputAsString = input.toString();
+    input = parseInt(input);
+    inputAsString = input.toString();
 
-      if(inputAsString === "NaN" || input < 1) {
-        alert("Not a number or lower than 1!");
-        break pingAndPong;
+    if(inputAsString === "NaN" || input < 1) {
+      alert("Not a number or lower than 1!");
+      break pingAndPong;
+    }
+
+    inputCounter(input);
+    arrayOfCountings.forEach(function(number){
+      if(number % 3 === 0) {
+        result = true;
+        console.log(result);
+      } else {
+        result = false;
+        console.log(result);
       }
-
-      alert("moocowmoo");
-
+    });
   }
 };
 
@@ -31,7 +40,6 @@ $(function() {
     event.preventDefault();
 
     var userNumber = $("input#user-number").val();
-    inputCounter(userNumber);
     pingPonger(userNumber);
     $(".result ul").empty();
     arrayOfCountings.forEach(function(number) {

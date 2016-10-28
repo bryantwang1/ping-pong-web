@@ -26,14 +26,14 @@ Output: "Not a number!"_
 Input: -14
 Output: "Not a number or below 1!"_
 * _The program can check if a number in the range is divisible by 3.
-Input: 9
-Output: True_
+Input: 3
+Output: False, False, True_
 * _The program can check if a number in the range is divisible by 5.
-Input: 10
-Output: True_
+Input: 5
+Output: False, False, False, False, True_
 * _The program can check if a number in the range is divisible by 15.
-Input: 30
-Output: True_
+Input: 15
+Output: Falsex14, True_
 * _The program can replace numbers divisible by 3 into a string reading "ping".
 Input: 15
 Output: 1,2,ping,4,5,ping,7,8,ping,10,11,ping,13,14,ping_
