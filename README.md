@@ -18,7 +18,10 @@ Input: 2
 Output: <li>1</li><li>2</li>_
 * _The program can check if the provided input is actually a number.
 Input: Bananas
-Output: False_
+Output: "Not a number!"_
+* _The program can check if the provided input is below 0.
+Input: -14
+Output: "Not a number or below 0!"_
 * _The program can check if a number in the range is divisible by 3.
 Input: 9
 Output: True_
