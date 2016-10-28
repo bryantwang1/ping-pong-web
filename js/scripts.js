@@ -14,7 +14,7 @@ function pingPonger(input) {
       inputAsString = input.toString();
 
       if(inputAsString === "NaN" || input < 1) {
-        alert("Not a number or below 1!");
+        alert("Not a number or lower than 1!");
         break pingAndPong;
       }
 
