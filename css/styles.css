@@ -62,6 +62,7 @@ h1 {
 
 .content {
   padding-top: 3vh;
+  padding-right: 5vh;
 }
 
 .content h2 {
@@ -106,4 +107,20 @@ ul {
 
 .fancier .sidebar {
   background: url("../img/verticalWoodTexture.png"), #a57b40;
+  border-radius: 0px 30px 0px 0px;
+}
+
+.fancier .content h2 {
+  border-bottom: 1px solid black;
+}
+
+.fancier ul {
+  list-style-image: url("../img/pingPongIcon.png");
+}
+
+.fancier ul li {
+  font-family: cursive;
+  font-size: 18px;
+  margin: 20px;
+  float: left;
 }
