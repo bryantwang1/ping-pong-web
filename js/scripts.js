@@ -23,7 +23,7 @@ function pingPonger(input) {
     inputCounter(input);
 
     for(var idx = 0; idx < arrayOfCountings.length; idx++) {
-      console.log("loop for 3");
+      console.log("loop for pingpong");
       if(arrayOfCountings[idx] % 3 === 0){
         arrayOfCountings[idx] = arrayOfCountings[idx].toString();
         arrayOfCountings[idx] += "ping";
@@ -31,6 +31,9 @@ function pingPonger(input) {
       if(parseInt(arrayOfCountings[idx]) % 5 === 0){
         arrayOfCountings[idx] = arrayOfCountings[idx].toString();
         arrayOfCountings[idx] += "pong";
+      }
+      if(typeof arrayOfCountings[idx] === "string"){
+        arrayOfCountings[idx] = arrayOfCountings[idx].replace(/\d*/g, "");
       }
     }
 

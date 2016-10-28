@@ -35,8 +35,11 @@ Output: False, False, True, False, True_
 Input: 10
 Output: 1,2,3ping,4,5,6ping,7,8,9ping,10_
 * _The program can add "pong" to numbers divisible by 5.
-Input: 10
+Input: 15
 Output: 1,2,3ping,4,5pong,6ping,7,8,9ping,10pong,11,12ping,13,14,15pingpong_
+* _The program can remove the numbers when they have ping or pong or both appended to them.
+Input: 15
+Output: 1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,pingpong_
 
 ## Setup/Installation Requirements
 
