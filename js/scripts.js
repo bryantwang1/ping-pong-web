@@ -1,5 +1,4 @@
 var arrayOfCountings;
-var result;
 // Counts up to and including the provided number by increments of 1.
 function inputCounter(number) {
   arrayOfCountings = [];
@@ -7,7 +6,7 @@ function inputCounter(number) {
     arrayOfCountings.push(idx);
   }
 };
-//
+// Checks if input is valid, then goes through arrayOfCountings checking if the numbers contained within are divisible by 3, and then by 5, adding ping and pong respectively, then removes the numbers from array objects that have been modified.
 function pingPonger(input) {
   pingAndPong: {
 
@@ -20,7 +19,6 @@ function pingPonger(input) {
       break pingAndPong;
     }
 
-    arrayOfResults = [];
     inputCounter(input);
 
     for(var idx = 0; idx < arrayOfCountings.length; idx++) {
