@@ -16,6 +16,9 @@ Output: [1,2]_
 * _The program can return a range of numbers from 1 up to the provided number in a list format.
 Input: 2
 Output: <li>1</li><li>2</li>_
+* _The program can return a new range of numbers from 1 up to the provided number in a list format on every submit, overwriting the old one.
+Input: 2
+Output: <li>1</li><li>2</li>_
 * _The program can check if the provided input is actually a number.
 Input: Bananas
 Output: "Not a number!"_
