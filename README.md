@@ -8,6 +8,10 @@
 
 _A project made for Epicodus to practice behavior driven development._
 
+# Link to page
+
+https://bryantwang1.github.io/ping-pong
+
 ## Specs
 
 * _The program can count up to the provided number.
