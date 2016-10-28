@@ -2,6 +2,7 @@ body {
   background-color: #e0e0e0;
   background-attachment: fixed;
 }
+
 .container {
   margin: 0;
   padding: 0;
@@ -68,3 +69,9 @@ ul {
 .custom-form-field {
   width: 180px;
 }
+
+.btn-danger {
+  margin-top: 10px;
+}
+
+/* Fancier customizations below this line */

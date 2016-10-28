@@ -44,6 +44,7 @@ function pingPonger(input) {
 
 $(function() {
   $(".result").append("<ul></ul>");
+  $(".container").wrap("<div id=\"fancier-or-not\"></div>")
   $("form#ping-ponging").submit(function(event){
     event.preventDefault();
 
@@ -53,5 +54,13 @@ $(function() {
     arrayOfCountings.forEach(function(number) {
       $(".result ul").append("<li>" + number + "</li>");
     });
+  });
+
+  $("#button#imitation").click(function() {
+    $(".fancier-or-not").removeClass();
+  });
+
+  $("#button#imitation").click(function() {
+    $(".fancier-or-not").addClass("fancier");
   });
 });
