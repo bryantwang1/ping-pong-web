@@ -64,3 +64,7 @@ body {
 ul {
   padding-left: 16px;
 }
+
+.custom-form-field {
+  width: 180px;
+}
