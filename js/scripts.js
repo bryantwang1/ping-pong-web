@@ -28,18 +28,11 @@ function pingPonger(input) {
         arrayOfCountings[idx] = arrayOfCountings[idx].toString();
         arrayOfCountings[idx] += "ping";
       }
-      if(arrayOfCountings[idx] % 5 === 0){
+      if(parseInt(arrayOfCountings[idx]) % 5 === 0){
         arrayOfCountings[idx] = arrayOfCountings[idx].toString();
         arrayOfCountings[idx] += "pong";
       }
     }
-    // for(var idx = 0; idx < arrayOfCountings.length; idx++) {
-    //   console.log("loop for 5");
-    //   if(arrayOfCountings[idx] % 5 === 0){
-    //     arrayOfCountings[idx] = arrayOfCountings[idx].toString();
-    //     arrayOfCountings[idx] += "pong";
-    //   }
-    // }
 
   }
 };

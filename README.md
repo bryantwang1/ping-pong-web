@@ -36,7 +36,7 @@ Input: 10
 Output: 1,2,3ping,4,5,6ping,7,8,9ping,10_
 * _The program can add "pong" to numbers divisible by 5.
 Input: 10
-Output: 1,2,3ping,4,5pong,6ping,7,8,9ping,10pong_
+Output: 1,2,3ping,4,5pong,6ping,7,8,9ping,10pong,11,12ping,13,14,15pingpong_
 
 ## Setup/Installation Requirements
 
