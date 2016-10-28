@@ -22,20 +22,12 @@ function pingPonger(input) {
 
     arrayOfResults = [];
     inputCounter(input);
-    arrayOfCountings.forEach(function(number){
-      /*if(number % 5 === 0) {
-        result = true;
-        console.log(result);
-      } else*/ if(number % 3 === 0) {
-        result = true;
-        arrayOfResults.push("ping");
-        console.log(result);
-      } else {
-        arrayOfResults.push(number);
-        result = false;
-        console.log(result);
+
+    for(var idx = 0; idx < arrayOfCountings.length; idx++) {
+      if(arrayOfCountings[idx] % 3 === 0){
+        arrayOfCountings[idx] = "ping";
       }
-    });
+    }
   }
 };
 
@@ -49,7 +41,7 @@ $(function() {
     var userNumber = $("input#user-number").val();
     pingPonger(userNumber);
     $(".result ul").empty();
-    arrayOfResults.forEach(function(number) {
+    arrayOfCountings.forEach(function(number) {
       $(".result ul").append("<li>" + number + "</li>");
     });
   });
