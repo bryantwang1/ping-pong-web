@@ -11,11 +11,13 @@ function inputCounter(number) {
 function pingPonger(input) {
   pingAndPong: {
 
-    input = parseInt(input);
     inputAsString = input.toString();
+    input = parseInt(input);
+    console.log(/\D+/gi.test(inputAsString));
 
-    if(inputAsString === "NaN" || input < 1) {
+    if(/\D+/gi.test(inputAsString) || input < 1) {
       alert("Not a number or lower than 1!");
+      arrayOfCountings = ["Your input was no good!"];
       break pingAndPong;
     }
 
