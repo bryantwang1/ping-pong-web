@@ -15,5 +15,8 @@ $(function() {
 
     var userNumber = $("input#user-number").val();
     inputCounter(userNumber);
+    arrayOfCountings.forEach(function(number) {
+      $(".result ul").append("<li>" + number + "</li>");
+    });
   });
 });
