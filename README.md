@@ -30,10 +30,10 @@ Input: 3
 Output: False, False, True_
 * _The program can check if a number in the range is divisible by 5.
 Input: 5
-Output: False, False, False, False, True_
+Output: False, False, True, False, True_
 * _The program can check if a number in the range is divisible by 15.
 Input: 15
-Output: Falsex14, True_
+Output: Falsex2, True, False, Truex2, Falsex2, Truex2, False, True, Falsex2, True_
 * _The program can replace numbers divisible by 3 into a string reading "ping".
 Input: 15
 Output: 1,2,ping,4,5,ping,7,8,ping,10,11,ping,13,14,ping_
