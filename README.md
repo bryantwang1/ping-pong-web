@@ -31,12 +31,12 @@ Output: False, False, True_
 * _The program can check if a number in the range is divisible by 5.
 Input: 5
 Output: False, False, True, False, True_
-* _The program can replace numbers divisible by 3 into a string reading "ping".
-Input: 15
-Output: 1,2,ping,4,5,ping,7,8,ping,10,11,ping,13,14,ping_
-* _The program can replace numbers divisible by 5 into a string reading "pong".
-Input: 15
-Output: 1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,pong_
+* _The program can add "ping" to numbers divisible by 3.
+Input: 10
+Output: 1,2,3ping,4,5,6ping,7,8,9ping,10_
+* _The program can add "pong" to numbers divisible by 5.
+Input: 10
+Output: 1,2,3ping,4,5pong,6ping,7,8,9ping,10pong_
 
 ## Setup/Installation Requirements
 
