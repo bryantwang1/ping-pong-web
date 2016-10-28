@@ -13,6 +13,13 @@ function pingPonger(input) {
       input = parseInt(input);
       inputAsString = input.toString();
 
+      if(inputAsString === "NaN" || input < 1) {
+        alert("Not a number or below 1!");
+        break pingAndPong;
+      }
+
+      alert("moocowmoo");
+
   }
 };
 
