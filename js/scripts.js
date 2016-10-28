@@ -16,8 +16,7 @@ function pingPonger(input) {
     console.log(/\D+/gi.test(inputAsString));
 
     if(/\D+/gi.test(inputAsString) || input < 1) {
-      alert("Not a number or lower than 1!");
-      arrayOfCountings = ["Your input was no good!"];
+      arrayOfCountings = ["Your input was no good! It won't work if there are any characters besides numbers or if the number is lower than 1."];
       break pingAndPong;
     }
 
