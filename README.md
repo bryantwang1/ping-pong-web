@@ -31,18 +31,12 @@ Output: False, False, True_
 * _The program can check if a number in the range is divisible by 5.
 Input: 5
 Output: False, False, True, False, True_
-* _The program can check if a number in the range is divisible by 15.
-Input: 15
-Output: Falsex2, True, False, Truex2, Falsex2, Truex2, False, True, Falsex2, True_
 * _The program can replace numbers divisible by 3 into a string reading "ping".
 Input: 15
 Output: 1,2,ping,4,5,ping,7,8,ping,10,11,ping,13,14,ping_
 * _The program can replace numbers divisible by 5 into a string reading "pong".
 Input: 15
 Output: 1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,pong_
-* _The program can replace numbers divisible by 15 into a string reading "ping-pong".
-Input: 15
-Output: 1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,ping-pong_
 
 ## Setup/Installation Requirements
 

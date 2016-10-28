@@ -1,4 +1,5 @@
 var arrayOfCountings;
+var arrayOfResults;
 var result;
 // Counts up to and including the provided number by increments of 1.
 function inputCounter(number) {
@@ -19,18 +20,18 @@ function pingPonger(input) {
       break pingAndPong;
     }
 
+    arrayOfResults = [];
     inputCounter(input);
     arrayOfCountings.forEach(function(number){
-      if(number % 3 === 0 && number % 5 === 0) {
+      /*if(number % 5 === 0) {
         result = true;
         console.log(result);
-      } else if(number % 5 === 0) {
+      } else*/ if(number % 3 === 0) {
         result = true;
-        console.log(result);
-      } else if(number % 3 === 0) {
-        result = true;
+        arrayOfResults.push("ping");
         console.log(result);
       } else {
+        arrayOfResults.push(number);
         result = false;
         console.log(result);
       }
@@ -48,7 +49,7 @@ $(function() {
     var userNumber = $("input#user-number").val();
     pingPonger(userNumber);
     $(".result ul").empty();
-    arrayOfCountings.forEach(function(number) {
+    arrayOfResults.forEach(function(number) {
       $(".result ul").append("<li>" + number + "</li>");
     });
   });
