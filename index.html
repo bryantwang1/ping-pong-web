@@ -10,13 +10,32 @@
   </head>
   <body>
     <div class="container">
-      <h1>Ping Pong</h1>
+      <h1 class="custom-head">Ping Pong</h1>
+
+      <div class="sidebar">
+        <h2>About Ping Pong</h2>
+        <h4>Created by:</h4>
+        <h7>Bryant Wang</h7>
+        <h4>Github Username/URL:</h4>
+        <h6>bryantwang1</h6>
+        <h4>Level 1 Test for:</h4>
+        <h7>Intro to Programming</h7>
+      </div>
+
+      <h2>Let's play!</h2>
+      <h3>Rules:</h3>
+      <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
+      <ol>
+        <li>Numbers divisible by 3 become "ping"</li>
+        <li>Numbers divisible by 5 become "pong"</li>
+        <li>Numbers divisible by 15 become "pingpong"</li>
+      </ol>
       <form id="ping-ponging">
         <div class="form-group">
-          <label for="user-number">Let's ping-pong</label>
-          <input id="user-number" class="form-control" type="text" placeholder="Enter a number above 0">
+          <label for="user-number">Enter your number here:</label>
+          <input id="user-number" type="text" placeholder="Enter a number above 0">
+          <button type="submit" class="btn">Submit</button>
         </div>
-        <button type="submit" class="btn">Submit</button>
       </form>
       <div class="result">
 
