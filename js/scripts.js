@@ -1,3 +1,4 @@
+// This global variable is pretty much unavoidable as far as I can tell, but at least I kept it to 1 this time.
 var arrayOfCountings;
 // Counts up to and including the provided number by increments of 1.
 function inputCounter(number) {
