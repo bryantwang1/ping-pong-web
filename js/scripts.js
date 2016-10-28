@@ -21,7 +21,11 @@ function pingPonger(input) {
 
     inputCounter(input);
     arrayOfCountings.forEach(function(number){
-      if(number % 3 === 0) {
+      if(number % 5 === 0) {
+        result = true;
+        console.log(result);
+      }
+      else if(number % 3 === 0) {
         result = true;
         console.log(result);
       } else {
